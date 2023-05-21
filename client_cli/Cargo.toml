@@ -1,0 +1,12 @@
+[package]
+name = "chess_client_cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+server = {path = "../server"}
+tokio = {version = "1.21.2", features = ["full"]}
+reqwest = "0.11.16"
+
+[dependencies.chess_core]
+path = "../core"

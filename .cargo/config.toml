@@ -1,0 +1,3 @@
+[alias]
+server = "run --bin server -- "
+cli = "run --bin chess_client_cli -- "

@@ -1,0 +1,23 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "server"
+path = "src/main.rs"
+
+[lib]
+name = "server"
+path = "lib/lib.rs"
+
+[dependencies]
+tokio = {version = "1.21.2", features = ["full"]}
+serde = {version = "1.0.147", features = ["derive"]}
+serde_json = "1.0.95"
+crossbeam = "0.8.2"
+tide = "0.16.0"
+http = "0.2.9"
+
+[dependencies.chess_core]
+path = "../core"
